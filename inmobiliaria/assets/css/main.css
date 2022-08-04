@@ -302,13 +302,14 @@ html {
     border-bottom-left-radius: 7px;
 }
 
-/* ventas */
+/* Filtro */
+
 .filter {
     width: 250px;
     height: 100%;
     left: 0;
     background: rgb(228, 228, 228);;
-    margin-left: 10px;
+    margin-left: 30px;
     /* border-radius: 50%;  */
 }
 
@@ -321,7 +322,9 @@ html {
     background: rgb(217, 217, 217);
     letter-spacing: 1px;
 }
-
+.filter-body{
+    margin-top: 15px;
+}
 
 .filter-menu { 
     color: var(--text-color);
@@ -347,7 +350,7 @@ html {
 
 .filter-menu-item a:hover {
     color: var(--soraci-color);
-    background: #1e1e1e;
+    background: #c7c7c7;
     border-left-color: var(--soraci-color);
 }
 
