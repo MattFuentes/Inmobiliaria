@@ -354,6 +354,9 @@ html {
     border-left-color: var(--soraci-color);
 }
 
+.filter-none {
+    display: none;
+}
 
 
 /* Footer */

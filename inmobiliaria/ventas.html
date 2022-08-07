@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="showcase">
+    <section>
         <header class="header">
             <nav class="nav">
                 <h2 class="logo nav-home"><span style="color: rgb(255, 102, 0);">Soraci </span><span
@@ -38,22 +38,22 @@
                 </div>
                 <div class="filter-body">   
                     <ul class="filter-menu">
-                        <li class="filter-menu-item"><a href="index.html">Ver Todos</a></li>
-                        <li class="filter-menu-item"><a href="">Casas</a></li>
-                        <li class="filter-menu-item"><a href="">Departamentos</a></li>
-                        <li class="filter-menu-item"><a href="">Locales</a></li>
-                        <li class="filter-menu-item"><a href="">Oficinas</a></li>
-                        <li class="filter-menu-item"><a href="">Lotes</a></li>
-                        <li class="filter-menu-item"><a href="">Cocheras</a></li>
-                        <li class="filter-menu-item"><a href="">PH</a></li>
-                        <li class="filter-menu-item"><a href="">Playa</a></li>
+                        <li class="filter-menu-item"><button id=""><a href="index.html">Ver Todos</a></li></button>
+                        <li class="filter-menu-item"><button id="casasBtn">Casas</li></button>
+                        <li class="filter-menu-item"><button id="depaBtn"><a href="">Departamentos</a></li></button>
+                        <li class="filter-menu-item"><button id=""><a href="">Locales</a></li></button>
+                        <li class="filter-menu-item"><button id=""><a href="">Oficinas</a></li></button>
+                        <li class="filter-menu-item"><button id=""><a href="">Lotes</a></li></button>
+                        <li class="filter-menu-item"><button id=""><a href="">Cocheras</a></li></button>
+                        <li class="filter-menu-item"><button id="phBtn"><a href="">PH</a></li></button>
+                        <li class="filter-menu-item"><button id=""><a href="">Playa</a></li></button>
                     </ul>  
                 </div>
             </div>
         </div>
     <div>
         <div class="cards">
-            <div class="card">
+            <div class="card" id="casa">
                 <div class="card-gral">
                     <div class="card-head">
                         <h1>CASA MAR DEL PLATA</h1>
@@ -71,10 +71,10 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="ph">
                 <div class="card-gral">
                     <div class="card-head">
-                        <h1>CASA MAR DEL PLATA</h1>
+                        <h1>PH MAR DEL PLATA</h1>
                     </div>
                     <div class="card-image">
                         <img src="./assets/img/14.jpg" alt="">
@@ -89,10 +89,46 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="depa">
                 <div class="card-gral">
                     <div class="card-head">
-                        <h1>CASA MAR DEL PLATA</h1>
+                        <h1>DEPARTAMENTO MAR DEL PLATA</h1>
+                    </div>
+                    <div class="card-image">
+                        <img src="./assets/img/14.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1>VENTA</h1>
+                        <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="cochera">
+                <div class="card-gral">
+                    <div class="card-head">
+                        <h1>Cochera MAR DEL PLATA</h1>
+                    </div>
+                    <div class="card-image">
+                        <img src="./assets/img/14.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h1>VENTA</h1>
+                        <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="playa">
+                <div class="card-gral">
+                    <div class="card-head">
+                        <h1>Playa MAR DEL PLATA</h1>
                     </div>
                     <div class="card-image">
                         <img src="./assets/img/14.jpg" alt="">
@@ -126,4 +162,6 @@
             </div>
         </div>
     </footer>
+<script src="./assets/js/filter.js"></script>
 </body>
+</html>
