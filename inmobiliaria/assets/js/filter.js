@@ -1,24 +1,28 @@
-// Const de cada boton
-// Evento cada boton
-// Const de cada casa, ph, depa
 
-const casasBtn = document.querySelector('#casasBtn');
-const depaBtn = document.querySelector('#depaBtn');
-const phBtn = document.querySelector('#phBtn');
-const casa = document.getElementById('casa');
-const depa = document.getElementById('depa');
-const ph = document.getElementById('ph');
+const category  = document.querySelectorAll('.filter-menu-item'); // Todas las categorias del filtro
+const allHouses = document.querySelectorAll('.card'); // Todas las cartas
 
-const getCasa = () => {
-    casa.classList.remove('filter-none');
-    ph.classList.add('filter-none');
-    depa.classList.add('filter-none');
-    casa.classList.add('filter-none');
-    ph.classList.add('filter-none');
-    depa.classList.add('filter-none');
-    casa.classList.add('filter-none');
-    ph.classList.add('filter-none');
-    depa.classList.add('filter-none');
+//
+const filterCategorys = (item) => {
+    changeActive(item);
+    for( let i = 0; i < allHouses.length; i++){
+        if( allHouses[i].classList.contains(item.attributes.id.value)){
+            allHouses[i].classList.remove("filter-none");
+        } else {
+            allHouses[i].classList.add("filter-none");
+        }
+    }
 }
 
-addEventListener('click', getCasa, false)
+const changeActive = (activeItem) => {
+    for(let i = 0; i < category.length; i++){
+        category[i].classList.remove('active');
+    }
+    activeItem.classList.add('active');
+}
+
+// EVENTOS
+
+for( let i = 0; i < category.length; i++){
+    category[i].addEventListener('click', filterCategorys.bind(this, category[i]));
+}

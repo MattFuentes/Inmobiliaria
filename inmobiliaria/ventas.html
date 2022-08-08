@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <title>En Venta</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -36,132 +37,370 @@
                 <div class="filter-head">
                     <h3>FILTRAR POR</h3>
                 </div>
-                <div class="filter-body">   
-                    <ul class="filter-menu">
-                        <li class="filter-menu-item"><button id=""><a href="index.html">Ver Todos</a></li></button>
-                        <li class="filter-menu-item"><button id="casasBtn">Casas</li></button>
-                        <li class="filter-menu-item"><button id="depaBtn"><a href="">Departamentos</a></li></button>
-                        <li class="filter-menu-item"><button id=""><a href="">Locales</a></li></button>
-                        <li class="filter-menu-item"><button id=""><a href="">Oficinas</a></li></button>
-                        <li class="filter-menu-item"><button id=""><a href="">Lotes</a></li></button>
-                        <li class="filter-menu-item"><button id=""><a href="">Cocheras</a></li></button>
-                        <li class="filter-menu-item"><button id="phBtn"><a href="">PH</a></li></button>
-                        <li class="filter-menu-item"><button id=""><a href="">Playa</a></li></button>
-                    </ul>  
+                <div class="filter-body">
+                    <ul>
+                        <div class="filter-menu">
+                          <li class="filter-menu-item active" id="all">Ver Todos</li>
+                        </div>
+                        <div class="filter-menu">
+                             <li class="filter-menu-item" id="houses">Casas</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="depto">Departamentos</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="local">Locales</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="office">Oficinas</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="batch">Lotes</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="garage">Cocheras</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="ph">PH</li>
+                        </div>
+                        <div class="filter-menu">
+                            <li class="filter-menu-item" id="beach">Playa</li>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </div>
-    <div>
-        <div class="cards">
-            <div class="card" id="casa">
-                <div class="card-gral">
-                    <div class="card-head">
-                        <h1>CASA MAR DEL PLATA</h1>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/img/14.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>VENTA</h1>
-                        <pre>
+        <div>
+            <div class="cards">
+                <!-- inicio carta -->
+                <div class="card all houses" id="houses">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>CASA MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
                             <h4>3 AMBIENTES 
     BALCON
     62M2</h3>
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" id="ph">
-                <div class="card-gral">
-                    <div class="card-head">
-                        <h1>PH MAR DEL PLATA</h1>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/img/14.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>VENTA</h1>
-                        <pre>
+                <!-- inicio carta -->
+                <div class="card all houses">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>CASA MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
                             <h4>3 AMBIENTES 
     BALCON
     62M2</h3>
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" id="depa">
-                <div class="card-gral">
-                    <div class="card-head">
-                        <h1>DEPARTAMENTO MAR DEL PLATA</h1>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/img/14.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>VENTA</h1>
-                        <pre>
+                <!-- inicio carta -->
+                <div class="card all depto">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>DEPARTAMENTO MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
                             <h4>3 AMBIENTES 
     BALCON
     62M2</h3>
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" id="cochera">
-                <div class="card-gral">
-                    <div class="card-head">
-                        <h1>Cochera MAR DEL PLATA</h1>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/img/14.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>VENTA</h1>
-                        <pre>
+                <!-- inicio carta -->
+                <div class="card all depto">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>DEPARTAMENTO MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
                             <h4>3 AMBIENTES 
     BALCON
     62M2</h3>
                         </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card" id="playa">
-                <div class="card-gral">
-                    <div class="card-head">
-                        <h1>Playa MAR DEL PLATA</h1>
-                    </div>
-                    <div class="card-image">
-                        <img src="./assets/img/14.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h1>VENTA</h1>
-                        <pre>
+                <!-- inicio carta -->
+                <div class="card all local">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>LOCAL EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
                             <h4>3 AMBIENTES 
     BALCON
     62M2</h3>
                         </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all local" id="local">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>LOCAL EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all office" id="office">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>OFICINAS EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all office" id="office">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>OFICINAS EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all batch" id="batch">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>LOTE EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all batch" id="batch">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>LOTE EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all garage" id="garage">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>COCHERA EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all garage" id="garage">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>COCHERA EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all ph" id="ph">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>PH EN EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all ph" id="ph">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>PH EN EN MAR DEL PLATA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all beach" id="beach">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>CASA EN LA COSTA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio carta -->
+                <div class="card all beach" id="beach">
+                    <div class="card-gral">
+                        <div class="card-head">
+                            <h1>CASA EN LA COSTA</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="./assets/img/14.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h1>VENTA</h1>
+                            <pre>
+                            <h4>3 AMBIENTES 
+    BALCON
+    62M2</h3>
+                        </pre>
+                        </div>
                     </div>
                 </div>
             </div>
-
-        </div>
     </section>
-    <footer class="footer">    
+    <footer class="footer">
         <div class="footer-body">
             <div class="footer-header">
-                <h1 class="logo"><span style="color: rgb(255, 102, 0);">Soraci </span><span style="text-shadow: 1px 1px 1px rgb(255, 102, 0);">Propiedades</span></h1>
+                <h1 class="logo"><span style="color: rgb(255, 102, 0);">Soraci </span><span
+                        style="text-shadow: 1px 1px 1px rgb(255, 102, 0);">Propiedades</span></h1>
             </div>
             <div class="footer-text">
                 <ul class="nav-footer">
-                    <li class="nav-menu-item"><a href="#venta" class="nav-menu-link .nav-menu-link-active" id="nav-link"> Inicio</a></li>
-                    <li class="nav-menu-item"><a href="../participantes" class="nav-menu-link .nav-menu-link-active"> Venta</a></li>
-                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active"> Alquiler</a></li>
-                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active"> Contacto</a></li>
-                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active"> Quienes Somos</a></li>
+                    <li class="nav-menu-item"><a href="#venta" class="nav-menu-link .nav-menu-link-active"
+                            id="nav-link"> Inicio</a></li>
+                    <li class="nav-menu-item"><a href="../participantes" class="nav-menu-link .nav-menu-link-active">
+                            Venta</a></li>
+                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active">
+                            Alquiler</a></li>
+                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active">
+                            Contacto</a></li>
+                    <li class="nav-menu-item"><a href="../livestream" class="nav-menu-link .nav-menu-link-active">
+                            Quienes Somos</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-<script src="./assets/js/filter.js"></script>
+    <script src="./assets/js/filter.js"></script>
 </body>
+
 </html>

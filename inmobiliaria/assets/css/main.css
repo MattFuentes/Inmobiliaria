@@ -322,6 +322,7 @@ html {
     background: rgb(217, 217, 217);
     letter-spacing: 1px;
 }
+
 .filter-body{
     margin-top: 15px;
 }
@@ -334,11 +335,32 @@ html {
     text-align: center;
 }
 
+/* .filter-title {
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
+    justify-content:center;
+    background: #a8a8a8;
+    padding: 12px;
+    color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+} */
+
+/* .filter-title li{
+    padding: 0 10px;
+}
+
+.filter-title span{
+    color: #222;
+} */
+
 .filter-menu-item {
     line-height: 60px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.filter-menu-item a {
+
+.filter-menu-item  {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
@@ -348,7 +370,7 @@ html {
     border-left: 3px solid transparent;
 }
 
-.filter-menu-item a:hover {
+.filter-menu-item:hover {
     color: var(--soraci-color);
     background: #c7c7c7;
     border-left-color: var(--soraci-color);
@@ -358,7 +380,15 @@ html {
     display: none;
 }
 
+.active {
+    color: var(--soraci-color);
+    background: #c7c7c7;
+    border-left-color: var(--soraci-color);
+}
 
+.filter-none {
+    display: none;
+}
 /* Footer */
 
 footer {
@@ -403,3 +433,4 @@ footer {
     color: rgb(255, 102, 0);
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
+
