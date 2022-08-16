@@ -240,15 +240,22 @@ html {
     margin-bottom: 50px;
 }
 
+.recommend2 {
+    max-width: 1920px;
+    height: max-content;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* card */
-
-
 
 .cards {
     display: flex;
     gap: 100px;
     justify-content: center;
-    
+    flex-wrap: wrap;   
 }
 .card {
     width: 300px;
@@ -270,6 +277,8 @@ html {
     width: 300px;
     transition: 0.3s all ease-in-out;
     box-shadow: 1px 1px 10px rgba(17, 17, 17, 0.185);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
 .card-gral:hover {
@@ -318,10 +327,15 @@ html {
 
 .filter {
     width: 250px;
-    height: 80%;
+    height: max-content;
     left: 0;
     background: rgb(228, 228, 228);;
     margin-left: 30px;
+}
+
+.filter-gral{
+    width: 250px;
+    height: max-content;
 }
 
 .filter-head {
@@ -334,11 +348,15 @@ html {
     letter-spacing: 1px;
 }
 
-.filter-body{
-    margin-top: 15px;
+.filter-menu { 
+    color: var(--text-color);
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    text-align: center;
 }
 
-.filter-menu { 
+.filter-zone {
     color: var(--text-color);
     height: 100%;
     width: 100%;
@@ -349,9 +367,6 @@ html {
 .filter-menu-item {
     line-height: 60px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.filter-menu-item  {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
@@ -361,13 +376,75 @@ html {
     border-left: 3px solid transparent;
 }
 
+.filter-menu-zone {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.filter-zone-item {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+.sub-menu {
+    list-style: none;
+    position: absolute;
+    left: 247px;
+    width: 250px;
+    height: 300px;
+    top: 0;
+    display: none;
+    background: rgb(228, 228, 228);
+    border-left: 2px solid transparent;
+    border-left-color: rgb(194, 187, 187);
+    overflow: auto;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover ul {
+    display: initial;
+}
+
 .filter-menu-item:hover {
     color: var(--soraci-color);
     background: #c7c7c7;
     border-left-color: var(--soraci-color);
 }
 
+.filter-zone-item:hover {
+    color: var(--soraci-color);
+    background: #c7c7c7;
+    border-left-color: var(--soraci-color);
+}
+
+.filter-menu-zone:hover {
+    color: var(--soraci-color);
+    background: #c7c7c7;
+    border-left-color: var(--soraci-color);
+}
+
 .filter-none {
+    display: none;
+}
+
+.filter-zone-none {
     display: none;
 }
 
@@ -377,9 +454,6 @@ html {
     border-left-color: var(--soraci-color);
 }
 
-.filter-none {
-    display: none;
-}
 /* Footer */
 
 footer {
