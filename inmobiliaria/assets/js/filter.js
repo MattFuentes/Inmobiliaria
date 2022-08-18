@@ -2,7 +2,7 @@
 const categorys = document.querySelectorAll('.filter-menu-item'); // Todas las categorias del filtro
 const allHouses = document.querySelectorAll('.card'); // Todas las cartas
 const allZones  = document.querySelectorAll('.filter-zone-item'); // Todas las zonas
-console.log(allZones);
+
 // Filtra las cartas removiendo o agregando la clase "filter-none"
 
 const filterCategorys = (item) => {
@@ -19,6 +19,7 @@ const filterCategorys = (item) => {
 // Filtra las zonas, al estar apartado de filterCategorys no son afectados entre ellos, manteniendo la categoria casa en distintas zonas
 
 const filterZones = (zone) => {
+    changeActive(zone);
     for (let i = 0; i < allHouses.length; i++) {
         if (allHouses[i].classList.contains(zone.attributes.id.value)) {
             allHouses[i].classList.remove("filter-zone-none");
@@ -26,13 +27,12 @@ const filterZones = (zone) => {
             allHouses[i].classList.add("filter-zone-none");
         }
     }
-    console.log('ando');
 }
 
 // Agrega la clase "active" para mas placer en la categoria seleccionada y la remueve en el resto
 
 const changeActive = (activeItem) => {
-    for (let i = 0; i < categorys.length; i++) {
+    for (let i = 0; i < categorys.length || i < allZones.length; i++) {
         categorys[i].classList.remove('active');
     }
     activeItem.classList.add('active');
@@ -40,12 +40,10 @@ const changeActive = (activeItem) => {
 
 // EVENTOS
 
-for (let j = 0; j < allZones.length; j++) {
-    allZones[j].addEventListener('click', filterZones.bind(this, allZones[j]));
-}
-
 for (let i = 0; i < categorys.length; i++) {
     categorys[i].addEventListener('click', filterCategorys.bind(this, categorys[i]));
 }
 
-
+for (let j = 0; j < allZones.length; j++) {
+    allZones[j].addEventListener('click', filterZones.bind(this, allZones[j]));
+}

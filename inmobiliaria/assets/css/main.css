@@ -15,18 +15,13 @@ html {
 :root {
     --theme-color: rgb(228, 228, 228);
     --soraci-color: rgb(255, 102, 0);
-    --secundary-color: #5000ca;
+    --secundary-color: rgb(255, 154, 87);
     --text-color-inverse: white;
     --text-color: black;
-    /* --navbar-shallow-color: #e5e5e5;
-    --menu-mobile-background-color: #3a4460;
-    --footer-background-color1: #0a1142;
-    --footer-background-color2: #101010;
-    --text-color-footer: #c7c7c7;
-    --primary: #6703ff;
     --grey: #b8b8b8;
     --text-secundary: #3b4469;
-    --shadow: 0 0 13px rgba(185,185,185,  .25)*/ 
+    --shadow: 0 0 13px rgba(185,185,185,  .25);
+    --color-grey: #e7e7e7;
 }
 
 .showcase {
