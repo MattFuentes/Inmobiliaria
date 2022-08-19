@@ -4,7 +4,8 @@ const slider     = document.querySelector("#slider");
 const slider2    = document.querySelector("#slider2");
 const fullscreen = document.querySelector(".fullscreen");
 const imgs       = document.querySelectorAll(".slider-img");
-
+const body       = document.querySelector(".body");
+const smallImg   = document.querySelectorAll(".small-img");
 
 let sliderSection      = document.querySelectorAll(".slider-section");
 let sliderSection2     = document.querySelectorAll(".fullscreen-slider-section");
@@ -84,11 +85,19 @@ btnLeft2.addEventListener('click', () => {
 
 btnClose.addEventListener('click', () => {
     fullscreen.style.display = "none";
+    body.classList.remove("body-fullscreen");
 })
-
 
 for (let i = 0; i < imgs.length; i++) {
     imgs[i].addEventListener('click', () => {
         fullscreen.style.display = "";
+        body.classList.add("body-fullscreen");
     });
 }
+
+for(let i = 0; i < smallImg.length; i++){
+    smallImg[i].addEventListener('click', () => {
+        fullscreen.style.display = "";
+        body.classList.add("body-fullscreen");
+    });
+};
