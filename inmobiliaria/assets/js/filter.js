@@ -19,7 +19,7 @@ const filterCategorys = (item) => {
 // Filtra las zonas, al estar apartado de filterCategorys no son afectados entre ellos, manteniendo la categoria casa en distintas zonas
 
 const filterZones = (zone) => {
-    changeActive(zone);
+    changeActiveZone(zone);
     for (let i = 0; i < allHouses.length; i++) {
         if (allHouses[i].classList.contains(zone.attributes.id.value)) {
             allHouses[i].classList.remove("filter-zone-none");
@@ -32,10 +32,17 @@ const filterZones = (zone) => {
 // Agrega la clase "active" para mas placer en la categoria seleccionada y la remueve en el resto
 
 const changeActive = (activeItem) => {
-    for (let i = 0; i < categorys.length || i < allZones.length; i++) {
+    for (let i = 0; i < categorys.length; i++) {
         categorys[i].classList.remove('active');
     }
     activeItem.classList.add('active');
+}
+
+const changeActiveZone = (activeZone) => {
+    for (let i = 0; i < activeZone.length; i++) {
+        activeZone[i].classList.remove('active');
+    }
+    // activeZone.classList.add('active');
 }
 
 // EVENTOS

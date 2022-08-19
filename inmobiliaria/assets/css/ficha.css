@@ -9,6 +9,8 @@ body {
     max-width: 1920px;
 }
 
+/* Titulo */
+
 .title-ficha {
     display: flex;
     max-width: 980px;
@@ -24,6 +26,62 @@ body {
     font-weight: 410;
 }
 
+/* Fullscreen */
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rebeccapurple;
+}
+
+.container-fullscreen-slider{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #fff, 0 10px 30px;
+    position: relative;
+    border-radius: 3%;
+}
+
+.fullscreen-slider {
+    width: 500%;
+    height: 800px;
+    display: flex;
+    margin-left: -100%;
+}
+
+.fullscreen-slider-section {
+    width: 100%;
+}
+
+.slider-btn-close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.slider-btn-close i {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+/* carrusel */
+
 .container {
     display: flex;
     justify-content: center;
@@ -31,13 +89,10 @@ body {
     margin: 0 auto;
 }
 
-/* carrusel */
-
 .container-slideshows {
     width: 892px;
-    height: 640px;
+    height: 700px;
     margin: 20px;
-    
     border: 1px solid;
     border-color: var(--color-grey);
     border-radius: 3%;
@@ -51,19 +106,6 @@ body {
     margin: 0;
     overflow: hidden;
     position: relative;
-    /* border: 1px solid;
-    border-color: var(--color-grey);
-    border-radius: 3%;
-    background-color: #fff;
-    box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%); */
-    /* position: relative; */
-    
-    /* padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 1px solid black; */
 }
 
 .slider {
@@ -75,6 +117,7 @@ body {
 
 .slider-section {
     width: 100%;
+    
 }
 
 .slider-img {
@@ -83,6 +126,7 @@ body {
     border-radius: 3%;
     display: block;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .slider-btn {
@@ -119,16 +163,15 @@ body {
     right: 10px;
 }
 
+/* Mini carrusel */
+
 .swipper-container {
-    /* background: greenyellow; */
     width: 890px;
     height: 200px;
-    /* position: relative; */
 }
 
 .slider-swipper {
     position: absolute;
-    /* top: 0; */
     width: 890px;
     height: 200px;
     overflow: hidden;
@@ -158,7 +201,10 @@ body {
     border-radius: 3%;
     margin-top: 15px;
     object-fit: cover;
+
 }
+
+/* Ficha En Venta */
 
 .texto-info {
     width: 370px;
@@ -246,6 +292,8 @@ body {
     font-weight: 200;
     /* cursor:default ; */
 }
+
+/* Descripcion */
 
 .container-block {
     width: 890px;
@@ -340,7 +388,7 @@ body {
     margin: 0 -8px -8px 0px;
 }
 
-
+/* Mapa */
 
 .map-container {
    justify-content: center;
