@@ -30,30 +30,15 @@
             </ul>
         </nav>
     </header>
-    <div class="fullscreen" style="display: none;">
-        <div class="container-fullscreen-slider">
-            <div class="fullscreen-slider" id="slider2">
-                <div class="fullscreen-slider-section" id="">
-                    <img src="./assets/img/depto1.jpg" alt="" class="slider-img">
-                </div>
-                <div class="fullscreen-slider-section">
-                    <img src="./assets/img/depto2.jpg" alt="" class="slider-img">
-                </div>
-                <div class="fullscreen-slider-section">
-                    <img src="./assets/img/depto3.jpg" alt="" class="slider-img">
-                </div>
-                <div class="fullscreen-slider-section">
-                    <img src="./assets/img/depto4.png" alt="" class="slider-img ">
-                </div>
-                <div class="fullscreen-slider-section">
-                    <img src="./assets/img/depto5.jpg" alt="" class="slider-img">
-                </div>
-            </div>
-            <div class="slider-btn slider-btn-right" id="right2"><i class="fa-solid fa-chevron-right"></i></div>
-            <div class="slider-btn slider-btn-left" id="left2"><i class="fa-solid fa-chevron-left"></i></div>
-            <div class="slider-btn-close" id="close"><i class="fa-solid fa-xmark"></i></div>
+    <div class="preview-box">
+        <div class="image-box">
+            <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+            <div class="slide next"><i class="fas fa-angle-right"></i></div>
+            <div class="slider-btn-close"><i class="fa-solid fa-xmark"></i></div>
+            <img src="" alt="">
         </div>
     </div>
+    <div class="shadow"></div>
     <section class="first-part">
         <div class="title-ficha">
             <p> Soy un titulo </p>
@@ -62,19 +47,19 @@
             <div class="container-slideshows">
                 <div class="slideshow">
                     <div class="slider" id="slider">
-                        <div class="slider-section" id="">
+                        <div class="slider-section img-link" id="slide1">
                             <img src="./assets/img/depto1.jpg" alt="" class="slider-img">
                         </div>
-                        <div class="slider-section">
+                        <div class="slider-section img-link" id="slide2">
                             <img src="./assets/img/depto2.jpg" alt="" class="slider-img">
                         </div>
-                        <div class="slider-section">
+                        <div class="slider-section img-link" id="slide3">
                             <img src="./assets/img/depto3.jpg" alt="" class="slider-img">
                         </div>
-                        <div class="slider-section">
+                        <div class="slider-section img-link" id="slide4">
                             <img src="./assets/img/depto4.png" alt="" class="slider-img">
                         </div>
-                        <div class="slider-section">
+                        <div class="slider-section img-link" id="slide5">
                             <img src="./assets/img/depto5.jpg" alt="" class="slider-img">
                         </div>
                     </div>
@@ -83,11 +68,15 @@
                 </div>
                 <!-- mini slider -->
                 <div class="container-img">
-                    <div class="small-img">
-                        <img src="./assets/img/depto2.jpg" alt="">
+                    <div class="small-img img-link">
+                        <a href="#slide2">
+                            <img src="./assets/img/depto2.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="small-img">
-                        <img src="./assets/img/depto3.jpg" alt="">
+                    <div class="small-img img-link">
+                        <a href="#slide3">
+                            <img src="./assets/img/depto3.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,7 +89,12 @@
                         <h3 class="price"> USD 45.000 </h3>
                     </div>
                     <div class="expenses">
-                        <h3 class="expense"> + 3.500 expensas </h3>
+                        <h3 class="expense"> + $3.500 expensas </h3>
+                    </div>
+                    <div class="contacs">
+                        <a href="">
+                            <h3 class="contac"><i class="fa-brands fa-whatsapp"></i> Contacto </h3>
+                        </a>
                     </div>
                     <div class="logos">
                         <div class="logo">
@@ -160,7 +154,7 @@
         </div>
     </section>
     <script src="./assets/js/slider.js"></script>
-    <!-- <script src="./assets/js/sliderSwipper.js"></script> -->
+    <script src="./assets/js/fullscreenSlider.js"></script>
     <footer class="footer">
         <div class="footer-body">
             <div class="footer-header">
