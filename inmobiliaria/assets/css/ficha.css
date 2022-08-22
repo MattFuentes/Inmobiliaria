@@ -343,10 +343,12 @@ body {
 /* Descripcion */
 
 .container-block {
-    width: 890px;
+    width: 1035px;
+    /* width: 1300px; */
     display: flex;
     flex-direction: column;
     margin: auto;
+    margin-left: 230px;
 }
 
 .text-block {
