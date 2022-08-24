@@ -15,6 +15,7 @@ body {
     max-width: 980px;
     margin: 0 auto;
     margin-top: 35px;
+    margin-bottom: 20px;
     justify-content: center;
 
 }
@@ -120,51 +121,37 @@ body {
 /* carrusel */
 
 .container {
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
 }
 
-.container-slideshows {
-    width: 1036px;
-    height: 905px;
-    margin: 20px;
+.slideshow {
+    width: 1700px;
+    height: max-content;
+    margin: auto;
+    margin-top: 10px;
     padding: 10px;
     border: 1px solid;
     border-color: var(--color-grey);
-    border-radius: 3%;
+    border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%);
     position: relative;
 }
 
-.slideshow {
-    width: 100%;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-}
-
 .slider {
-    width: 500%;
-    height: 584px;
+    height: max-content;
     display: flex;
-    margin-left: -100%;
 }
 
 .slider-section {
-    width: 100%;
-}
-
-.slider-section a {
-    width: 100%;
-    height: 100%;
+    margin: 5px;
 }
 
 .slider-img {
-    width: 100%;
-    height: 100%;
+    width: 592px;
+    height: 300px;
     border-radius: 20px;
     display: block;
     object-fit: cover;
@@ -185,6 +172,7 @@ body {
     border-radius: 50%;
     cursor: pointer;
     background: rgba(255, 255, 255, 0.7);
+    border: none;
 }
 
 .slider-btn i {
@@ -198,35 +186,71 @@ body {
 }
 
 .slider-btn-left {
-    left: 10px;
+    left: 20px;
+    
 }
 
 .slider-btn-right {
-    right: 10px;
+    right: 20px;
 }
 
-.container-img {
-    width: 1016px;
-    height: 216px;
+
+/* Descripcion */
+
+.container-block {
     display: flex;
-    gap: 10px;
-    padding-top: 10px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-.small-img {
-    width: 502px;
-    height: 285px;
-    object-fit: cover;
+.text-block {
+    width: 1275px;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: var(--color-grey);
+    background-color: #fff;
+    margin-right: 50px;
+    margin-top: 24px;
+    box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%);
+    
 }
 
-.small-img img {
+.text-descrip {
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    cursor: pointer;
+    height: max-content;
+    padding: 30px 30px;
 }
 
-/* Ficha En Venta */
+.text-descrip-title {
+    height: 25px;
+}
+
+.descrip-title {
+    font-weight: 550;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.descrip-body {
+    height: max-content;
+}
+
+.body-text-title {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.body-text {
+    max-height: max-content;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--text-color);
+    word-break: break-word;
+    white-space: pre-line;
+}
 
 .texto-info {
     width: 370px;
@@ -236,13 +260,13 @@ body {
     display: flex;
     border: 1px solid;
     border-color: var(--color-grey);
-    border-radius: 3%;
+    /* border-radius: 3%; */
     background-color: #fff;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 15px;
     box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%);
-    margin-bottom: 400px;
+    margin-top: 24px;
 }
 
 .all-info {
@@ -339,66 +363,6 @@ body {
     align-items: center;
     font-weight: 200;
 }
-
-/* Descripcion */
-
-.container-block {
-    width: 1035px;
-    /* width: 1300px; */
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-left: 230px;
-}
-
-.text-block {
-    width: 100%;
-    box-sizing: border-box;
-    border: 1px solid;
-    border-color: var(--color-grey);
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 24px;
-    box-shadow: 0 2px 3px 0 rgb(42 42 42 / 5%);
-}
-
-.text-descrip {
-    width: 100%;
-    height: max-content;
-    padding: 30px 30px;
-}
-
-.text-descrip-title {
-    height: 25px;
-}
-
-.descrip-title {
-    font-weight: 550;
-    font-size: 20px;
-    color: var(--text-color);
-}
-
-.descrip-body {
-    height: max-content;
-}
-
-.body-text-title {
-    margin-top: 16px;
-    font-weight: 400;
-    font-size: 17px;
-    color: var(--text-color);
-}
-
-.body-text {
-    max-height: max-content;
-    line-height: 24px;
-    font-weight: 400;
-    font-size: 17px;
-    color: var(--text-color);
-    word-break: break-word;
-    white-space: pre-line;
-}
-
 
 /* Mapa */
 

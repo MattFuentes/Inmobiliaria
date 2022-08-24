@@ -1,6 +1,5 @@
 
 const gallery = document.querySelectorAll(".slider-section"),
-    miniGallery = document.querySelectorAll(".small-img"),
     previewBox = document.querySelector(".preview-box"),
     previewImg = previewBox.querySelector("img"),
     closeIcon = previewBox.querySelector(".slider-btn-close"),
@@ -11,7 +10,7 @@ window.onload = () => {
     for (let i = 0; i < gallery.length; i++) {
         let newIndex = i; 
         let clickedImgIndex;
-        console.log(sliderSectionLast);
+
         gallery[i].onclick = () => {
             clickedImgIndex = i; 
             function preview() {

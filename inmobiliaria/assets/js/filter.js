@@ -33,14 +33,14 @@ const filterZones = (zone) => {
 
 const changeActive = (activeItem) => {
     for (let i = 0; i < categorys.length; i++) {
-        categorys[i].classList.remove('active');
+        categorys[i].classList.remove('filter-active');
     }
-    activeItem.classList.add('active');
+    activeItem.classList.add('filter-active');
 }
 
 const changeActiveZone = (activeZone) => {
     for (let i = 0; i < activeZone.length; i++) {
-        activeZone[i].classList.remove('active');
+        activeZone[i].classList.remove('filter-active');
     }
     // activeZone.classList.add('active');
 }
