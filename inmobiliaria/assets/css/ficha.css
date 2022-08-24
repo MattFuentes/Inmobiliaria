@@ -147,6 +147,7 @@ body {
 
 .slider-section {
     margin: 5px;
+    cursor: pointer;
 }
 
 .slider-img {
@@ -155,7 +156,7 @@ body {
     border-radius: 20px;
     display: block;
     object-fit: cover;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .slider-btn {
