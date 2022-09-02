@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ('partials/head.html') %>
+<body class="body">
+    <%- include ('partials/header.html') %>
+    <%- include ('partials/slider-fullscreen.html') %>
+    <div class="shadow"></div>
+    <section class="first-part">
+        <div class="title-ficha">
+            <p>ARAOZ AL 744 - ALQUILER COCHERA</p>
+        </div>
+        <div class="container">
+            <div class="slideshow">
+                <div class="slider" id="slider">
+                    <div class="slider-section img-link">
+                        <img src="./img/Araoz744Garage/01.JPG" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section img-link">
+                        <img src="./img/Araoz744Garage/02.JPG" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section img-link">
+                        <img src="./img/Araoz744Garage/03.JPG" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section img-link">
+                        <img src="./img/Araoz744Garage/04.JPG" alt="" class="slider-img">
+                    </div>
+                    <div class="slider-section img-link">
+                        <img src="./img/Araoz744Garage/05.JPG" alt="" class="slider-img">
+                    </div>
+                    <!-- -->
+                </div>
+                <button class="slider-btn slider-btn-right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <button class="slider-btn slider-btn-left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <div class="container-block">
+        <div class="text-block">
+            <div class="text-descrip">
+                <div class="text-descrip-title">
+                    <h3 class="descrip-title"> Descripcion </h3>
+                </div>
+                <div class="text-descrip-body">
+                    <h3 class="body-text-title"> Comoda cochera en planta baja, sin expensas </h3>
+                    <h3 class="body-text">
+                        Cómoda cochera en planta baja, el acceso a la misma es mediante portón automático. 
+El monto del alquiler incluye los gastos de ABL, Aysa y expensas.
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="texto-info">
+            <div class="all-info">
+                <div class="tags">
+                    <p class="tag"> Alquiler </p>
+                </div>
+                <div class="prices">
+                    <h3 class="price"> $- </h3>
+                </div>
+                <div class="expenses">
+                    <h3 class="expense"> Sin Expensas </h3>
+                </div>
+                <div class="contacs">
+                    <a href="">
+                        <h3 class="contac"><i class="fa-brands fa-whatsapp"></i> Contacto </h3>
+                    </a>
+                </div>
+                <div class="logos">
+                    <div class="logo">
+                        <ul class="fa-ul logo-list">
+                            <li class="logo-list-item"><span class="fa-li"><i class="fa-solid fa-maximize"></i></span>Metros
+                                totales: 12 m² </li>
+                            <li class="logo-list-item"><span class="fa-li"><i class="fa-solid fa-expand"></i></span>Metros
+                                cubiertos: 0 m² </li>
+                            <!-- <li class="logo-list-item"><span class="fa-li"><i class="fa-solid fa-bed"></i></span> Planta baja: 2 ambientes </li> -->
+                            <!-- <li class="logo-list-item"><span class="fa-li"><i class="fa-solid fa-bath"></i></span> Baño de uso comun </li> -->
+                            <!-- <li class="logo-list-item"><span class="fa-li"><i
+                                                        class="fa-solid fa-warehouse"></i></span>Cochera </li> -->
+                            <li class="logo-list-item"><span class="fa-li"><i class="fa-solid fa-calendar-days"></i></span> 10 años de antiguedad </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="map-container">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2663822179725!2d-58.43559434866394!3d-34.59742496457733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca714ca97c45%3A0x43ed03ae31319e04!2sAr%C3%A1oz%20744%2C%20C1414DPP%20CABA!5e0!3m2!1ses-419!2sar!4v1661889134872!5m2!1ses-419!2sar"
+                class="map" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/fullscreenSlider.js"></script>
+    <%- include ('partials/footer.html') %>
+</body>
+</html>
