@@ -205,4 +205,8 @@ router.get('/murature-venta', (req, res) => {
     res.render('murature-vendido-house.html', { tittle: 'Vendido Villa Luro Murature 5368'});
 });
 
+router.get('/amenabar-venta', (req, res) => {
+    res.render('amenabar-venta-garage.html', { tittle: 'Venta Belgrano Amenabar 1528'});
+});
+
 module.exports = router;
