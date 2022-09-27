@@ -1,0 +1,179 @@
+@media only screen and (max-width : 1199px) {
+
+    .card-index, .card-master, .cards-image img, .cards-body, .cards-head, .card-gral, .card, .card-head, .card-image img, .card-body {
+        width: 270px;
+    }
+
+    .cards-head h1 {
+        font-size: 20px;
+    }
+
+    .cards-image img:hover, .card-image img:hover {
+        height: 270px;
+        width: 270px;
+    }
+
+    .logo-list-item {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width : 991px) {
+
+    .nav {
+		justify-content: space-between;
+	}
+
+	.nav-home {
+		margin-right: 40px;
+		line-height: 70px;
+	}
+
+	.nav-menu {
+		flex-direction: column;
+		margin: 0px;
+		background-color: rgba(43, 13, 1, 0.822);
+		position: fixed;
+		align-items: center;
+		top: 60px;
+		width: 100%;
+		padding: 20px 0;
+		left: 100%;
+		transition: left 0.5s;
+	}
+
+	.nav-menu-item {
+		line-height: 70px;
+	}
+
+	.nav-menu-link:hover, .nav-menu-link-active {
+		background: rgba(43, 23, 1, 0.877);
+		padding: 10px;
+		transition: 0.5s;
+	}
+
+	.nav .nav-button {
+		display: block;
+		margin-right: 40px;
+	}
+
+	.nav-menu-visible {
+		left: 0;
+		transition: left 0.5s;
+	}
+
+	.nav-button:focus:not(:focus-visible) {
+		outline:none;
+	}
+
+    .recommend2 {
+        display: initial;
+    }
+
+    .recommend2 .filter {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .recommend2 .cards{
+        margin-bottom: 75px;
+    }
+
+    .logo-list-item {
+        font-size: 20px;
+    }
+
+    .container-block {
+        display: initial;
+    }
+
+    .text-block {
+        margin: 0 auto;
+        width: 88%;
+        margin-top: 30px;
+    }
+
+    .texto-info {
+        margin: 0 auto;
+        width: 88%;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width : 780px) {
+    .nav-footer {
+        display:initial;
+        margin-bottom: 30px;
+    }
+
+    .footer-body {
+        height: 350px;
+    }
+
+    .text img {
+        width: 350px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .text input {
+        width: 310px;
+    }
+
+    .first-part .title-ficha p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 479px) {
+
+    .text img {
+        width: 220px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+    }
+
+    .text h3 {
+        font-size: 15px;
+    }
+
+    .text input {
+        width: 180px;
+    }
+
+    .recommend .title h1 {
+        font-size: 25px;
+    }
+
+    .nav h2 {
+        font-size: 15px;
+    }
+
+    .cards-image img:hover {
+        height: 270px;
+        width: 270px;
+    }
+
+}
+
+@media only screen and (max-width : 479px) {
+
+    .nav h2 {
+        font-size: 12px;
+    }
+
+    .logo-list-item {
+        font-size: 15px;
+    }
+
+    .first-part .title-ficha p {
+        font-size: 17px;
+    }
+
+}

@@ -24,6 +24,13 @@ html {
     --color-grey: #e7e7e7;
 }
 
+.bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/3597628.jpg)
+}
+
 .showcase {
     position: static;
     right: 0;
@@ -100,6 +107,15 @@ html {
     mix-blend-mode: overlay;
 }
 
+.overlay-quienes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
 .text {
     position: relative;
     margin: 0 auto;
@@ -121,7 +137,15 @@ html {
     text-align: center;
     text-shadow: 1px 1px 1px rgb(255, 102, 0);
 }
-
+.text h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 102, 0, 0.5);
+    margin-bottom: 10px;
+}
 .text input {
     margin: 20px;
     padding: 15px;
@@ -176,10 +200,6 @@ html {
     color:white;
 }
 
-.nav-footer {
-    list-style: none;
-}
-
 .nav-menu {
     display: flex;
     margin-left: 30px;
@@ -222,22 +242,8 @@ html {
 
 /* Recomendado */
 
-.recommend {
-    height: 1000px;
-    width: max-content;
-    max-width: 1920px;
-    display: flex;
-    gap: 100px;
-    /* justify-content: center; */
-    margin-top: 50px;
-    
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
 
 .recommend2 {
-    max-width: 1920px;
-    height: max-content;
     display: flex;
     gap: 50px;
     margin-top: 50px;
@@ -252,9 +258,45 @@ html {
     justify-content: center;
     flex-wrap: wrap;   
 }
+
+.cards-master {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;   
+    margin-bottom: 50px;
+    cursor:default;
+}
+
 .card {
     width: 300px;
     display: flex;
+}
+
+.card-index {
+    width: 300px;
+    display: flex;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(102, 102, 102);
+    padding-bottom: 20px;
+    padding-top: 20px
+}
+
+.card-text2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color:rgb(102, 102, 102);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .title{
@@ -262,6 +304,7 @@ html {
     position: initial;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     font-size: 25px;
     color: rgb(0, 0, 0);
@@ -276,6 +319,23 @@ html {
     border-bottom-left-radius: 7px;
 }
 
+.card-master {
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 1px 1px 10px rgba(17, 17, 17, 0.185);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.card-master:hover {
+    box-shadow: 5px 5px 15px rgba(17, 17, 17, 0.329);
+    transition: 0.3s all ease-in-out;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
 .card-gral:hover {
     box-shadow: 5px 5px 15px rgba(17, 17, 17, 0.329);
     transition: 0.3s all ease-in-out;
@@ -283,7 +343,7 @@ html {
     border-bottom-left-radius: 7px;
 }
 
-.card-head {
+.card-head, .cards-head {
     width: 300px;
     height: 75px;
     margin: auto;
@@ -309,7 +369,20 @@ html {
     transition: 0.3s all ease-in-out;
 }
 
-.card-body {
+.cards-image img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+.cards-image img:hover {
+    width: 300px;
+    height: 250px;
+    transition: 0.3s all ease-in-out;
+}
+
+.card-body, .cards-body {
     background-color: white;
     width: 300px;
     text-align: center;
@@ -318,6 +391,11 @@ html {
     border-bottom-left-radius: 7px;
 }
 
+.card-body > h1 {
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 250, 241);
+    text-shadow: 1px 1px 1px rgba(228, 83, 0, 0.664);
+}
 /* Filtro */
 
 .filter {
@@ -369,6 +447,8 @@ html {
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
 }
 
 .filter-menu-zone {
@@ -381,6 +461,8 @@ html {
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
 }
 
 .filter-zone-item {
@@ -393,6 +475,7 @@ html {
     display: block;
     width: 100%;
     border-left: 3px solid transparent;
+    transition: 0.3s all ease-in-out;
 }
 
 .sub-menu {
@@ -407,32 +490,38 @@ html {
     border-left: 2px solid transparent;
     border-left-color: rgb(194, 187, 187);
     overflow: auto;
+    transition: 0.3s all ease-in-out;
 }
 
 .dropdown {
     position: relative;
+    transition: 0.3s all ease-in-out;
 }
 
 .dropdown:hover ul {
     display: initial;
+    transition: 0.3s all ease-in-out;
 }
 
 .filter-menu-item:hover {
     color: var(--soraci-color);
     background: #c7c7c7;
     border-left-color: var(--soraci-color);
+    transition: 0.3s all ease-in-out;
 }
 
 .filter-zone-item:hover {
     color: var(--soraci-color);
     background: #c7c7c7;
     border-left-color: var(--soraci-color);
+    transition: 0.3s all ease-in-out;
 }
 
 .filter-menu-zone:hover {
     color: var(--soraci-color);
     background: #c7c7c7;
     border-left-color: var(--soraci-color);
+    transition: 0.3s all ease-in-out;
 }
 
 .filter-none {
@@ -457,8 +546,22 @@ footer {
 
 .footer-body {
     width: 100%;
-    height: 350px;
+    height: 100%;
     color: white;
+}
+
+.nav-footer-item {
+    font-size: 1.15em;
+    font-weight: 500;
+    line-height: 1em;
+    width: max-content;
+    margin: 25px 30px;
+    text-transform: uppercase;
+}
+
+.nav-footer {
+    list-style: none;
+    display: flex;
 }
 
 .footer-header {

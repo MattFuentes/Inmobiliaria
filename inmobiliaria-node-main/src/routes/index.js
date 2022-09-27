@@ -21,6 +21,10 @@ router.get('/ficha-venta', (req, res) => {
     res.render('ficha-venta.html', { tittle: 'Venta Ejemplo'});
 });
 
+router.get('/quienessomos', (req, res) => {
+    res.render('quienessomos.html', { tittle: 'Venta Ejemplo'});
+});
+
 router.get('/3-de-febrero-alquiler', (req, res) => {
     res.render('3df-alquiler-dpto.html', { tittle: 'Alquiler Temporario 3 de febrero'});
 });
@@ -135,74 +139,6 @@ router.get('/marcos-sastre-alquiler', (req, res) => {
 
 router.get('/neuquen-alquiler', (req, res) => {
     res.render('neuquen-alquiler-dpto.html', { tittle: 'Venta Flores Norte Neuquen 2573'});
-});
-
-router.get('/av-independencia-venta', (req, res) => {
-    res.render('av-independencia-vendido-dpto.html', { tittle: 'Vendido Congreso Av Independencia 2030'});
-});
-
-router.get('/urquiza-venta', (req, res) => {
-    res.render('urquiza-vendido-dpto.html', { tittle: 'Vendido Once Urquiza 41'});
-});
-
-router.get('/ramon-falcon-venta', (req, res) => {
-    res.render('ramon-falcon-vendido-dpto.html', { tittle: 'Vendido Caballito Ramon Falcon 1621'});
-});
-
-router.get('/mansilla-venta', (req, res) => {
-    res.render('mansilla-vendido-dpto.html', { tittle: 'Vendido Recoleta Mansilla 2935'});
-});
-
-router.get('/mendez-de-andes-venta', (req, res) => {
-    res.render('mendez-andes-vendido-dpto.html', { tittle: 'Vendido Flores Norte Mendez de Andes 1947'});
-});
-
-router.get('/trelles-venta', (req, res) => {
-    res.render('trelles-vendido-dpto.html', { tittle: 'Vendido Villa General Mitre Manuel R. Trelles 1521'});
-});
-
-router.get('/camacua-venta', (req, res) => {
-    res.render('camacua-vendido-dpto.html', { tittle: 'Vendido Flores Camacua 368'});
-});
-
-router.get('/av-asamblea-venta', (req, res) => {
-    res.render('av-asamblea-vendido-dpto.html', { tittle: 'Vendido Parque Chacabuco Av Asamblea 819'});
-});
-
-router.get('/ciudad-de-la-paz-venta', (req, res) => {
-    res.render('ciudad-paz-vendido-dpto.html', { tittle: 'Vendido Belgrano Ciudad De La Paz 800'});
-});
-
-router.get('/segui-venta', (req, res) => {
-    res.render('segui-vendido-dpto.html', { tittle: 'Vendido Caballito Norte Segui 744'});
-});
-
-router.get('/11-de-septiembre-venta', (req, res) => {
-    res.render('11-septiembre-vendido-dpto.html', { tittle: 'Vendido Belgrano 11 de Septiembre de 1888 1774'});
-});
-
-router.get('/terrero-venta', (req, res) => {
-    res.render('terrero-vendido-dpto.html', { tittle: 'Vendido Flores Norte Terrero 931'});
-});
-
-router.get('/chivilcoy-venta', (req, res) => {
-    res.render('chivilcoy-vendido-ph.html', { tittle: 'Vendido Floresta Norte Av. Chivilcoy 975'});
-});
-
-router.get('/franklin-venta', (req, res) => {
-    res.render('franklin-vendido-ph.html', { tittle: 'Vendido Caballito Norte Franklin 1235'});
-});
-
-router.get('/mariano-acosta-venta', (req, res) => {
-    res.render('mariano-acosta-vendido-spn-house.html', { tittle: 'Suspendido Floresta Av. Mariano Acosta 432'});
-});
-
-router.get('/av-directorio-venta', (req, res) => {
-    res.render('av-directorio-vendido-batch.html', { tittle: 'Vendido Floresta Av. Directorio 4640'});
-});
-
-router.get('/murature-venta', (req, res) => {
-    res.render('murature-vendido-house.html', { tittle: 'Vendido Villa Luro Murature 5368'});
 });
 
 router.get('/amenabar-venta', (req, res) => {

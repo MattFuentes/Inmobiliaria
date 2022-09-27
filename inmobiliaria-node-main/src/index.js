@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 // Config
-app.set('port', process.env.PORT || 8080); // TODO cambiar puerto si es necesario
+app.set('port', process.env.PORT || 3000); // TODO cambiar puerto si es necesario
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
