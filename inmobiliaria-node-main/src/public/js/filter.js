@@ -42,7 +42,7 @@ const changeActiveZone = (activeZone) => {
     for (let i = 0; i < activeZone.length; i++) {
         activeZone[i].classList.remove('filter-active');
     }
-    // activeZone.classList.add('active');
+    // activeZone.classList.add('filter-active');
 }
 
 // EVENTOS

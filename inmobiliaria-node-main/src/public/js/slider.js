@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 scrollLock: false,
-                draggable: true,
+                draggable: false,
               }
             }
           ]
